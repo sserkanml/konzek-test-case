@@ -1,0 +1,18 @@
+[Unit]
+Description=Node.js HTTP Server
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/node /home/serkan/Projects/konzek/server/server.js
+Restart=always
+User=serkan
+Group=serkan
+Environment=NODE_ENV=production
+WorkingDirectory=/home/serkan/Projects/konzek/server
+
+# Redirect standard output and error to log files
+StandardOutput=append:/var/log/http-server.log
+StandardError=append:/var/log/http-server-error.log
+
+[Install]
+WantedBy=multi-user.target

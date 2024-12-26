@@ -1,0 +1,8 @@
+server/node_modules
+
+task3/terraform/terraform.tfstate
+task3/terraform/terraform.tfstate.backup
+task3/terraform/.terraform/
+task3/terraform/.terraform.tfstate.lock.info
+task3/terraform/terraform.tfstate.backup
+task3/terraform/.terraform.lock.hcl
